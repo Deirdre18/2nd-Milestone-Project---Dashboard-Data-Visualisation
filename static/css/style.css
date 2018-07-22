@@ -1,20 +1,17 @@
 
-.body {
-
-background-color: pink;
-    
-}
-
-div {
-            clear: left;
-}
+ div {
+ clear: left;
+ }
+ body {
+ background-color: pink;
+ }
 
 .navbar-default {
 	background-image: none;
 	margin-bottom: 0;
-	
+	clear: left;
 }
-/*have not used many of the styles below but kept them in css file*/
+/*have inclujded some css below which I haven't used in this project*/
 
 .section-heading, #discipline-selector {
 	display: inline-block;	
