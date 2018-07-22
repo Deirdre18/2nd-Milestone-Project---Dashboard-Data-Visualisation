@@ -20,9 +20,9 @@ I set out to ask the same questions that many 'users' looking at my data visuali
 (4)Number of female infant deaths per home?
 (5)Number of male infant deaths per home?
 
-I viewed online sources of data (death records) for this project, which were unformatted to do a project such as this, but I used json to format the data. All the data sources for this project can be viewed in "data-sources.md".
+I viewed online sources of data (death records) for this project, which were unformatted to do a project such as this, but I used json to format the data. All the data sources for this project can be viewed in "data-sources.md" - https://github.com/Deirdre18/2nd-Milestone-Project---Dashboard-Data-Visualisation/blob/master/data-sources.md
 
-DESIGN:
+**DESIGN:**
 
 I used bootstrap colum and row grids to create grids for the graphs and explanation of data results. 
 The following is the basic layout/design I used to create the graphs:-
@@ -35,11 +35,11 @@ The following screenshot is full page and shows the column grid layout:-
 
 
 
-UXE DESIGN:
+**UXE DESIGN:**
 
 
 
-- WHAT IS D3.JS? 
+**WHAT IS D3.JS?**
 
 (below is extract from Code Institute lesson on using D3.js, SVG).
 D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS.  SVG is Scalable Vector Graphics and is a standardised graphics rendering format based on XML. Creation of 2D graphics called Vector Graphics. Vector Graphics can be increased or decreased in size without loss of clarity. Use D3 to create anything from an HTML table to a Pie chart, from graphs and bar charts to geospatial maps.
