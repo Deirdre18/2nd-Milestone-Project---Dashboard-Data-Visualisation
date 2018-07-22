@@ -5,20 +5,20 @@ queue()
     function makeGraphs(error, deathsData) {
         var ndx = crossfilter(deathsData);
 
-        var genderDim = ndx.dimension(dc.pluck('gender'));
+        var nameDim = ndx.dimension(dc.pluck('name'));
 
-        var selectGender = dc.selectMenu('#gender-selector');
-        genderDim = ndx.dimension(dc.pluck('gender'));
-        selectGenderGroup = genderDim.group();
+        var selectName = dc.selectMenu('#name-selector');
+        genderDim = ndx.dimension(dc.pluck('name'));
+        selectNameGroup = nameDim.group();
 
-        selectGender
-            .dimension(genderDim)
-            .group(selectGenderGroup);      
+        selectName
+            .dimension(nameDim)
+            .group(selectNameGroup);      
             
             
         var nameDim = ndx.dimension(dc.pluck('name'));
         var infant_deathsByName = nameDim.group().reduceSum(dc.pluck('infant_deaths'));
-        dc.rowChart("#chart5-here")
+        dc.rowChart("#chart6-here")
             .width(600)
             .height(330)
             .dimension(nameDim)
