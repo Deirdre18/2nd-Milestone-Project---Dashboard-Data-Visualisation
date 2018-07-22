@@ -27,7 +27,7 @@ I viewed online sources of data (death records) for this project, which were unf
 I used bootstrap colum and row grids to create grids for the graphs and explanation of data results. 
 The following is the basic layout/design I used to create the graphs:-
 
-
+https://github.com/Deirdre18/2nd-Milestone-Project---Dashboard-Data-Visualisation/blob/master/dashboard-layout.pdf
 
 
 The following screenshot is full page and shows the column grid layout:-
