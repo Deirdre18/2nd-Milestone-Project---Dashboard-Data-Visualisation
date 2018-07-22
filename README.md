@@ -31,12 +31,21 @@ The following is the basic layout/design I used to create the graphs:-
 
 
 The following screenshot is full page and shows the column grid layout:-
-
-
+https://github.com/Deirdre18/2nd-Milestone-Project---Dashboard-Data-Visualisation/blob/master/images/dashboard.png
 
 
 **UXE DESIGN:**
 
+5 stages of UX design, to be completed. Jesse James Garrett designed 5 planes of UX design - Surface, Skeleton, Structure, Scope and Strategy planes. [This section is yet to be completed....]
+
+
+**TESTING:**
+
+Further testing needs to be done. I have used bootstrap grids.  However D3.js is not mobile responsive. [to be completed.....]
+
+
+**DEPLOYMENT:**
+This project doesn't need to be submitted until December, so at the time I have not deployed it as yet to gh-pages. [to be completed....]
 
 
 **WHAT IS D3.JS?**
@@ -45,3 +54,7 @@ The following screenshot is full page and shows the column grid layout:-
 D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS.  SVG is Scalable Vector Graphics and is a standardised graphics rendering format based on XML. Creation of 2D graphics called Vector Graphics. Vector Graphics can be increased or decreased in size without loss of clarity. Use D3 to create anything from an HTML table to a Pie chart, from graphs and bar charts to geospatial maps.
 
 D3 is a set of objects functions that comes in the form of a third-party JavaScript file written by Mike Bostock which you can use ( <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>), which is just like any external javascript file in the script tag and we've included here. D3 creates SVG's similar to what we created in earlier, plus a lot more but it does it programmatically rather than markup one of the things d3 relies on is attaching itself to some HTML element such as a div for example.
+
+**WHAT IS DC & CROSSFILTER?**
+
+DC includes BOTH D3.js and Crossfilter.js.
