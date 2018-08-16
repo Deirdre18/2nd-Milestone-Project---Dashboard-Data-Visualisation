@@ -19,7 +19,7 @@
         var maxDate = date_dim.top(1)[0].date;
 
 		dc.lineChart('#chart2-here')
-            .width(1000)
+            .width(700)
             .height(300)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
             .dimension(date_dim)

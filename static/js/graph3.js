@@ -24,7 +24,7 @@
                 }
             });
 
-        var stackedChart = dc.barChart("#chart5-here");
+        var stackedChart = dc.barChart('#chart5-here');
         stackedChart
             .width(500)
             .height(500)

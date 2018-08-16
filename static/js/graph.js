@@ -33,7 +33,7 @@ queue()
         
         var compositeChart = dc.compositeChart('#chart1-here');
         compositeChart
-            .width(990)
+            .width(700)
             .height(200)
             .dimension(date_dim)
             .x(d3.time.scale().domain([minDate, maxDate]))
