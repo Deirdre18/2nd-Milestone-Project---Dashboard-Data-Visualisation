@@ -52,7 +52,7 @@
 	line-height: 1.2;
 }
 
-#chart1-here {
+/*#chart1-here {
 overflow-x: auto; }
 
 #chart2-here {
@@ -68,4 +68,74 @@ overflow-x: auto; }
 overflow-x: auto; }
 
 #chart6-here {
-overflow-x: auto; }
+overflow-x: auto; }*/
+
+
+/* #chart3-here > svg, #chart4-here > svg, #chart6-here > svg {
+  max-width: 300px;
+}
+#chart5-here > svg {
+max-width: 365px;
+} */
+
+
+/*#chart1-here svg {
+	max-width: 365;
+	
+}
+
+#chart2-here svg {
+	max-width: 365;
+	
+}
+
+
+#chart3-here svg {
+	max-width: 300;
+	
+}
+
+#chart4-here svg {
+	max-width: 300;
+	
+}
+			  
+#chart5-here svg {
+	max-width: 300;
+	
+}
+
+#chart6-here svg {
+	max-width: 300;
+	
+} */
+
+#chart1-here svg {
+	max-width: 700px;
+	}
+
+#chart2-here svg {
+	max-width: 700px;
+	
+	}
+
+#chart3-here svg {
+	max-width: 300px;
+	
+	}
+
+#chart4-here svg {
+	max-width: 300px;
+	
+	}
+
+#chart5-here svg {
+	max-width: 600px;
+	overflow-x: hidden;
+	}
+	
+#chart6-here svg {
+	max-width: 365px;
+	
+	}
+	
