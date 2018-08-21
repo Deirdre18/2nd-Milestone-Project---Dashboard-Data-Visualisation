@@ -136,7 +136,7 @@ queue()
             .legend(dc.legend().x(420).y(0).itemHeight(15).gap(5));
 
         //to have stacks for female and male floating to left, without using 'float'.
-        stackedChart.margins().left = 100;
+        stackedChart.margins().right = 65;
 		
 		
         var nameDim = ndx.dimension(dc.pluck('name'));
