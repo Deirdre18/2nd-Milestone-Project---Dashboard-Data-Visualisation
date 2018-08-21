@@ -34,10 +34,12 @@ queue()
         		
         var compositeChart = dc.compositeChart("#chart1-here")
         compositeChart
-            .width(990)
+            .width("")
             .height(200)
             .dimension(date_dim)
+			.transitionDuration(250)
             .x(d3.time.scale().domain([minDate, maxDate]))
+            .xAxisLabel("Year")
             .yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
             .renderHorizontalGridLines(true)
@@ -61,12 +63,13 @@ queue()
         var maxDate = date_dim.top(1)[0].date;
 
 		dc.lineChart("#chart2-here")
-            .width(1000)
+            .width("")
             .height(300)
+			.transitionDuration(500)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
             .dimension(date_dim)
             .group(total_infant_deaths_per_date)
-            .transitionDuration(500)
+            .transitionDuration(250)
             .x(d3.time.scale().domain([minDate,maxDate]))
             .xAxisLabel("Year")
 			.yAxisLabel("Infant_Deaths")
@@ -76,10 +79,11 @@ queue()
 		var total_infant_deaths_per_gender = gender_dim.group().reduceSum(dc.pluck('infant_deaths'));
 		
         dc.pieChart("#chart3-here")
-            .height(365)
+		    .height(365)
+			.width("")
+			.transitionDuration(250)
             .radius(90)
-			.transitionDuration(1500)
-            .dimension(gender_dim)
+			.dimension(gender_dim)
 			.group(total_infant_deaths_per_gender);
 			
 			
@@ -89,11 +93,16 @@ queue()
 		
 
         dc.pieChart("#chart4-here")
+			.width("")
             .height(365)
+			.transitionDuration(250)
             .radius(90)
             .transitionDuration(1500)
             .dimension(name_dim)
             .group(total_infant_deaths_per_name);
+			
+			
+			
 			
 			
 		var name_dim = ndx.dimension(dc.pluck('name'));
@@ -115,17 +124,19 @@ queue()
 
         var stackedChart = dc.barChart("#chart5-here")
         stackedChart
-            .width(475)
-            .height(500)
+            .width("")
+            .height(400)
+			.transitionDuration(250)
             .dimension(name_dim)
-            .group(infant_deathsByNameGenderF, "Female Deaths")
-            .stack(infant_deathsByNameGenderM, "Male Deaths")
+            .group(infant_deathsByNameGenderF, "F")
+            .stack(infant_deathsByNameGenderM, "M")
             .x(d3.scale.ordinal())
             .xUnits(dc.units.ordinal)
 			.yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(420).y(0).itemHeight(15).gap(5));
 
-        stackedChart.margins().right = 100;
+        //to have stacks for female and male floating to left, without using 'float'.
+        stackedChart.margins().left = 100;
 		
 		
         var nameDim = ndx.dimension(dc.pluck('name'));
@@ -137,17 +148,35 @@ queue()
             .dimension(nameDim)
             .group(selectNameGroup);      
             
-            
+        //'Name' being = 'Gender' for the purpose of this chart (ie) var infant_deathsByName = var infant_deathsByGender. 
+		
         var nameDim = ndx.dimension(dc.pluck('name'));
         var infant_deathsByName = nameDim.group().reduceSum(dc.pluck('infant_deaths'));
-        dc.rowChart("#chart6-here")
-            .width(700)
-            .height(330)
+        var rowChart = dc.rowChart("#chart6-here")
+            .width("")
+            .height(400)
+			.transitionDuration(250)
             .dimension(nameDim)
             .group(infant_deathsByName)
-            .xAxis().ticks(4);    
-
-        
+            .xAxis().ticks(4)
+            
         dc.renderAll();
 		
     }
+	
+// Credit to DustanV (Stack Overflow Contributor) on re-sizing using JQuery. Used this solution to re-size graphs.
+//https://stackoverflow.com/questions/2854407/javascript-jquery-window-resize-how-to-fire-after-the-resize-is-completed		
+	
+	//Resizing charts to be responsive across mobile devices.   As the Parent element is nested in bootstrap .row > <div class="col-xs-12 col-sm-12 col-md-4" id="chart2-here" class="line-chart">, etc, so widths are calculated via bootstrap grid and there is no need to hard code.  On rendering the width and height are adjusted, to fill up the grid. On resizing, a function for window.resize is used to make the charts render on mobile and smaller devices. As part of implementing this, I refered to many sources, including this one - https://groups.google.com/forum/#!topic/dc-js-user-group/2pKK_MCNudA
+
+
+	
+	$(window).bind('resize', function(e){
+    window.resizeEvt;
+    $(window).resize(function(){
+        clearTimeout(window.resizeEvt);
+        window.resizeEvt = setTimeout(function(){
+        //code to do after window is resized
+        }, 250);
+    });
+});
