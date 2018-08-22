@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+    
 <head>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +9,54 @@
     
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" >
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
     
  
 </head>
 
-<body>
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<nav class="navbar navbar-dark bg-primary">
-<header class="container>
-  <span class="navbar">
-  <h3><strong>Infant Mortality in two Mother & Baby Homes between 1950-1955</h3></strong>
-  <h3><em>(NB: The graphs below do not include still-births)</em></h3>
-  </span>
-</header>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" id="home"><i class="fa fa-home"></i><strong>Home</strong><span class="sr-only">(current)</span></a>
+      </li>
+      
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Charts</strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#chart1-here">Composite</a>
+          <a class="dropdown-item" href="#chart2-here">Line</a>
+          <a class="dropdown-item" href="#chart3-here">Pie</a>
+		  		<a class="dropdown-item" href="#chart4-here">Pie1</a>
+		  		<a class="dropdown-item" href="#chart6-here">Selector</a>
+		  		<a class="dropdown-item" href="#chart5-here">StackBar</a>
+		 
+		  
+        </div>
+		</li>
+      
+  </div>
+			<span class="navbar-text">
+			<h3><strong>Infant Mortality in two Mother & Baby Homes (1950-1955)</h3></strong>
+			</span>
 </nav>
 
 
 
  <main>
+ 	
+ 	<h5 class="NB"><em>(NB: The graphs below do not include still-births)</em></h5>
+			
 
 	<section class="section">
         <div class="container">
@@ -119,7 +148,7 @@
     <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="static/js/dc.min.js"></script>
     <script type="text/javascript" src="static/js/queue.min.js"></script>
-    <script type="text/javascript" src="static/js/graphAll.js"></script>
+    <script type="text/javascript" src="static/js/graph.js"></script>
 	
 </body>
 </section>
