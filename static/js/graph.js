@@ -40,7 +40,6 @@ queue()
 			.transitionDuration(250)
             .x(d3.time.scale().domain([minDate, maxDate]))
             .xAxisLabel("Year")
-            .xAxis().ticks(5)
             .yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
             .renderHorizontalGridLines(true)
@@ -73,8 +72,7 @@ queue()
             .transitionDuration(250)
             .x(d3.time.scale().domain([minDate,maxDate]))
             .xAxisLabel("Year")
-            .xAxis().ticks(5)
-			.yAxisLabel("Infant_Deaths");
+           	.yAxisLabel("Infant_Deaths");
             
 			
 		var gender_dim = ndx.dimension(dc.pluck('gender'));
