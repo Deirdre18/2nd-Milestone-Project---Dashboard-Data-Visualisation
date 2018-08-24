@@ -63,7 +63,7 @@ queue()
         var maxDate = date_dim.top(1)[0].date;
 
 		dc.lineChart("#chart2-here")
-            .width(500)
+            .width()
             .height(300)
 			.transitionDuration(500)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
@@ -79,8 +79,8 @@ queue()
 		var total_infant_deaths_per_gender = gender_dim.group().reduceSum(dc.pluck('infant_deaths'));
 		
         dc.pieChart("#chart3-here")
+		    .width("")
 		    .height(500)
-			.width("")
 			.transitionDuration(250)
             .radius(90)
 			.dimension(gender_dim)
