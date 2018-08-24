@@ -39,7 +39,7 @@ queue()
             .dimension(date_dim)
 			.transitionDuration(250)
             .x(d3.time.scale().domain([minDate, maxDate]))
-            .xAxisLabel("Year")
+            .xAxisLabel("Year").ticks(5)
             .yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
             .renderHorizontalGridLines(true)
@@ -71,7 +71,7 @@ queue()
             .group(total_infant_deaths_per_date)
             .transitionDuration(250)
             .x(d3.time.scale().domain([minDate,maxDate]))
-            .xAxisLabel("Year")
+            .xAxisLabel("Year").ticks(5)
            	.yAxisLabel("Infant_Deaths");
             
 			
