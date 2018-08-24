@@ -39,7 +39,7 @@ queue()
             .dimension(date_dim)
 			.transitionDuration(250)
             .x(d3.time.scale().domain([minDate, maxDate]))
-            .xAxisLabel("Year").ticks(5)
+            .xAxisLabel("Year")
             .yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
             .renderHorizontalGridLines(true)
@@ -63,7 +63,7 @@ queue()
         var maxDate = date_dim.top(1)[0].date;
 
 		dc.lineChart("#chart2-here")
-            .width("")
+            .width(500)
             .height(300)
 			.transitionDuration(500)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
@@ -71,7 +71,7 @@ queue()
             .group(total_infant_deaths_per_date)
             .transitionDuration(250)
             .x(d3.time.scale().domain([minDate,maxDate]))
-            .xAxisLabel("Year").ticks(5)
+            .xAxisLabel("Year")
            	.yAxisLabel("Infant_Deaths");
             
 			
@@ -79,7 +79,7 @@ queue()
 		var total_infant_deaths_per_gender = gender_dim.group().reduceSum(dc.pluck('infant_deaths'));
 		
         dc.pieChart("#chart3-here")
-		    .height(365)
+		    .height(500)
 			.width("")
 			.transitionDuration(250)
             .radius(90)
