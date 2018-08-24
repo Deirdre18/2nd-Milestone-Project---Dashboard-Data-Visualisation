@@ -72,6 +72,8 @@ queue()
             .transitionDuration(250)
             .x(d3.time.scale().domain([minDate,maxDate]))
             .xAxisLabel("Year")
+            
+            .xAxis().tickFormat(d3.time.scale().domain([minDate,maxDate]))
            	.yAxisLabel("Infant_Deaths");
             
 			
