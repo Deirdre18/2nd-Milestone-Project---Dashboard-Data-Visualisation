@@ -34,7 +34,7 @@ queue()
         		
         var compositeChart = dc.compositeChart("#chart1-here")
         compositeChart
-            .width()
+            .width("")
             .height(200)
             .dimension(date_dim)
 			.transitionDuration(250)
@@ -63,7 +63,7 @@ queue()
         var maxDate = date_dim.top(1)[0].date;
 
 		dc.lineChart("#chart2-here")
-            .width()
+            .width("")
             .height(300)
 			.transitionDuration(500)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
@@ -93,7 +93,7 @@ queue()
 		
 
         dc.pieChart("#chart4-here")
-			.width()
+			.width("")
             .height(365)
 			.transitionDuration(250)
             .radius(90)
@@ -124,7 +124,7 @@ queue()
 
         var stackedChart = dc.barChart("#chart5-here")
         stackedChart
-            .width()
+            .width("")
             .height(400)
 			.transitionDuration(250)
             .dimension(name_dim)
@@ -153,7 +153,7 @@ queue()
         var nameDim = ndx.dimension(dc.pluck('name'));
         var infant_deathsByName = nameDim.group().reduceSum(dc.pluck('infant_deaths'));
         var rowChart = dc.rowChart("#chart6-here")
-            .width()
+            .width("")
             .height(400)
 			.transitionDuration(250)
             .dimension(nameDim)
