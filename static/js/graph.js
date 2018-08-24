@@ -63,7 +63,7 @@ queue()
         var maxDate = date_dim.top(1)[0].date;
 
 		dc.lineChart("#chart2-here")
-            .width()
+            .width("")
             .height(300)
 			.transitionDuration(500)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
