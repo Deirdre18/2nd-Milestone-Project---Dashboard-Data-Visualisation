@@ -80,7 +80,7 @@ queue()
 		
         dc.pieChart("#chart3-here")
 		    .height(365)
-			.width()
+			.width("")
 			.transitionDuration(250)
             .radius(90)
 			.dimension(gender_dim)
