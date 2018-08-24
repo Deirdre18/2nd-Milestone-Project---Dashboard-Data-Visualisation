@@ -34,12 +34,11 @@ queue()
         		
         var compositeChart = dc.compositeChart("#chart1-here")
         compositeChart
-            .width("")
+            .width(360)
             .height(200)
             .dimension(date_dim)
 			.transitionDuration(250)
-            .x(d3.date.scale().domain([minDate, maxDate]))
-            
+            .x(d3.time.scale().domain([minDate, maxDate]))
             .yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
             .renderHorizontalGridLines(true)
@@ -64,14 +63,13 @@ queue()
 
 		dc.lineChart("#chart2-here")
             .width("")
-            .height(300)
+            .height(360)
 			.transitionDuration(500)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
             .dimension(date_dim)
             .group(total_infant_deaths_per_date)
             .transitionDuration(250)
-            .x(d3.date.scale().domain([minDate,maxDate]))
-            
+            .x(d3.time.scale().domain([minDate,maxDate]))
            	.yAxisLabel("Infant_Deaths");
             
 			
