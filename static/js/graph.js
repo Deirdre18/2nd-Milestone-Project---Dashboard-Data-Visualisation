@@ -38,7 +38,7 @@ queue()
             .height(200)
             .dimension(date_dim)
 			.transitionDuration(250)
-            .x(d3.time.scale().domain([minDate, maxDate]))
+            .x(d3.date.scale().domain([minDate, maxDate]))
             
             .yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
@@ -70,7 +70,7 @@ queue()
             .dimension(date_dim)
             .group(total_infant_deaths_per_date)
             .transitionDuration(250)
-            .x(d3.time.scale().domain([minDate,maxDate]))
+            .x(d3.date.scale().domain([minDate,maxDate]))
             
            	.yAxisLabel("Infant_Deaths");
             
