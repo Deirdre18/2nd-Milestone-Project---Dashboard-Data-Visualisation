@@ -78,7 +78,6 @@ h3 {text-align: center;
 .section-paragraph {
 	line-height: 1.2;
 }
-/*credit to Eventyret (Student, Code Institute) for help with this solution to target svg, in order to reduce size of graphs and help with re-sizing D3 graphs. However, I did not use the code below to resize graphs, instead I used a JQuery (resize) function which was posted on Slack Overflow by a contributor - DustanV (see graph.js). 
 
  #chart1-here svg {
 	max-width:500px;
@@ -87,6 +86,10 @@ h3 {text-align: center;
 #chart2-here svg {
 	max-width: 500px;
 }	
+/*
+credit to Eventyret (Student, Code Institute) for help with this solution to target svg, in order to reduce size of graphs and help with re-sizing D3 graphs. However, I did not use the code below to resize graphs, instead I used a JQuery (resize) function which was posted on Slack Overflow by a contributor - DustanV (see graph.js). 
+
+
 
 #chart3-here svg {
 	max-width: 350px;
