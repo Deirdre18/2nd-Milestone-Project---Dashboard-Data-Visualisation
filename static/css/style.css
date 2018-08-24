@@ -37,59 +37,20 @@ h3 {text-align: center;
  }
 
 
-/*have included some css below which I haven't used in this project*/
 
-.section-heading, #discipline-selector {
-	display: inline-block;	
-	float: none;
-	margin: 0;
-}
+/*
+credit to Eventyret (Student, Code Institute) for help with this solution to target svg, in order to reduce size of graphs and help with re-sizing D3 graphs. However, I did not use the code below to resize graphs, instead I used a JQuery (resize) function which was posted on Slack Overflow by a contributor - DustanV (see graph.js). */
 
-.section-heading {
-	margin-bottom: 50px;
-}
-
-#discipline-selector {
-	margin-left: 15px;
-}
-
-.number-box {
-	margin-right: 75px;
-}
-
-.number-box, .fa.fa-gender {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.fa-gender {
-	margin-right: 10px;
-}
-
-.custom-chart {
-	margin-bottom: 40px;
-}
-
-.section {
-	border-bottom: 1px solid #e6e6e6;
-	padding: 30px 0;
-}
-
-.section-paragraph {
-	line-height: 1.2;
-}
-
- #chart1-here svg {
+#chart1-here  {
 	max-width:500px;
 	}
 
-#chart2-here svg {
+#chart2-here  {
 	max-width: 500px;
 }	
+
+
 /*
-credit to Eventyret (Student, Code Institute) for help with this solution to target svg, in order to reduce size of graphs and help with re-sizing D3 graphs. However, I did not use the code below to resize graphs, instead I used a JQuery (resize) function which was posted on Slack Overflow by a contributor - DustanV (see graph.js). 
-
-
 
 #chart3-here svg {
 	max-width: 350px;
