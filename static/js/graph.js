@@ -34,11 +34,12 @@ queue()
         		
         var compositeChart = dc.compositeChart("#chart1-here")
         compositeChart
-            .width(360)
+            .width("")
             .height(200)
             .dimension(date_dim)
 			.transitionDuration(250)
             .x(d3.time.scale().domain([minDate, maxDate]))
+            .xAxisLabel("Year")
             .yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
             .renderHorizontalGridLines(true)
@@ -70,6 +71,7 @@ queue()
             .group(total_infant_deaths_per_date)
             .transitionDuration(250)
             .x(d3.time.scale().domain([minDate,maxDate]))
+            .xAxisLabel("Year")
            	.yAxisLabel("Infant_Deaths");
             
 			
@@ -92,7 +94,7 @@ queue()
 
         dc.pieChart("#chart4-here")
 			.width("")
-            .height(365)
+            .height(500)
 			.transitionDuration(250)
             .radius(90)
             .transitionDuration(1500)
