@@ -42,7 +42,7 @@ queue()
             .xAxisLabel("Year")
             .yAxisLabel("Infant_Deaths")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
-            .renderHorizontalGridLines(true)
+            .renderHorizontalGridLines(false)
             .compose([
                 dc.lineChart(compositeChart)
                     .colors('green')
