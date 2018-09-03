@@ -46,14 +46,15 @@ Further testing needs to be done. I have used bootstrap grids.  However D3.js is
 
 **DEPLOYMENT:**
 This project doesn't need to be submitted until December, but I've deployed it as it is to gh-pages. Will update changes before final submission. 
-https://deirdre18.github.io/2nd-Milestone-Project---Dashboard-Data-Visualisation/
+ 
+[Link to Data Visualisation Project](https://deirdre18.github.io/2nd-Milestone-Project---Dashboard-Data-Visualisation)
 
 **WHAT IS D3.JS?**
 
 (below is extract from Code Institute lesson on using D3.js, SVG).
 D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS.  SVG stands for Scalable Vector Graphics. It is a standardised graphics rendering format based on XML. Creation of 2D graphics called Vector Graphics. Vector Graphics can be increased or decreased in size without loss of clarity. Use D3 to create anything from an HTML table to a Pie chart, from graphs and bar charts to geospatial maps.
 
-D3 is a set of objects functions that comes in the form of a third-party JavaScript file written by Mike Bostock which you can use ( <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>), which is just like any external javascript file in the script tag and we've included here. D3 creates SVG's similar to what we created in earlier, plus a lot more but it does it programmatically rather than markup one of the things d3 relies on is attaching itself to some HTML element such as a div for example.
+D3 is a set of objects functions that comes in the form of a third-party JavaScript file written by Mike Bostock which you can use (<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>), which is just like any external javascript file in the script tag and we've included here. D3 creates SVG's similar to what we created in earlier, plus a lot more but it does it programmatically rather than markup one of the things d3 relies on is attaching itself to some HTML element such as a div for example.
 
 **WHAT IS DC & CROSSFILTER?**
 
