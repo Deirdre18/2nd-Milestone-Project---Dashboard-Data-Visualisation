@@ -2,9 +2,29 @@
     z-index: 1; }
 
 .navbar a:hover  {
-    background-color: red;
+    background-color: lightblue;
 }
 
+.navbar {
+      
+      Background-color:#2e5cb8;
+}
+
+
+
+footer {
+      
+      Background-color:#2e5cb8;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 100%;
+      height: 20%;
+     }
+ 
+.website {
+color: white;
+
+}
 
 
 #navbarDropdown {
@@ -12,6 +32,9 @@ color: white;
 
 }
 
+#summary {display: block;
+          margin-left: auto;
+}
 
 .dropdown-menu a:hover {
     background-color: lightgrey;
@@ -26,7 +49,9 @@ h3 {text-align: center;
 	color: black;
 }
 
-.NB {text-align: center;}
+.NB {text-align: center;
+    margin-bottom: 15px;
+}
 
 
  div {
