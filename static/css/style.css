@@ -11,17 +11,21 @@
 }
 
 body {
-     overflow-x: hidden; }
+     overflow-x: hidden; 
+ }
       
-
 
 footer {
       
       background-color:purple;
-      margin-top: 0;
       margin-bottom: 0;
       width: 100%;
+      border:0;
       height: auto;
+      bottom: 0px;
+      left: 0px;
+      right: 0px; 
+      padding-bottom:10px;
      }
  
 .website {

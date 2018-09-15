@@ -32,7 +32,9 @@ The tasks that can be accomplished on the Dashboard involve seeing how the chart
 
 This is the plan or flow of interactions users will take to navigate and understand a website. A structure typically contains both a site map and a flow chart. To this end I tried to visualise the website, firstly in my mind and then on paper, by doing some mock-up sketches. 
 
-[Initial dashboard layout](https://github.com/Deirdre18/2nd-Milestone-Project---Dashboard-Data-Visualisation/blob/master/images/dashboard.png)
+[Initial dashboard layout - photo](https://github.com/Deirdre18/2nd-Milestone-Project---Dashboard-Data-Visualisation/blob/master/images/dashboard.png)
+
+[Initial dashboard layout - grid](https://github.com/Deirdre18/2nd-Milestone-Project---Dashboard-Data-Visualisation/blob/master/dashboard-layout1.pdf)
 
 [Sketch for Dashboard](https://github.com/Deirdre18/2nd-Milestone-Project---Dashboard-Data-Visualisation/blob/master/Mock-up%20Sketches/20180914_100039.jpg)
 
@@ -118,7 +120,7 @@ I used version control on an ongoing basis to back-up my code to a remote reposi
 This project was developed in Cloud9 IDE.
 I used Gh-pages to deploy the website - [Link to Data Visualisation Project](https://deirdre18.github.io/2nd-Milestone-Project---Dashboard-Data-Visualisation/)
 
-##Information
+## Information
 
 I viewed online sources of data (death records) for this project, which were unformatted to do a project such as this, but I used json to format the data. All the data sources for this project can be viewed in "data-sources.md" – [Data Sources](https://github.com/Deirdre18/2nd-Milestone-Project---Dashboard-Data-Visualisation/blob/master/data-sources.md)
 
