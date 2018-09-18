@@ -83,6 +83,7 @@ function stackedChart() {
 }
 
 
+
 //Testing Row Chart
 function rowChart() {
   
@@ -101,3 +102,36 @@ function rowChart() {
 
     return that;
 }
+
+
+//Testing Bar Chart
+function barChart() {
+    
+    var that = {};
+    
+    that.render = function() {
+       var svg = d3.select('body').append('svg')
+             .attr('height', '400')
+             .attr('width', "")
+             .append('g')
+             .attr("transform", "translate(0, 0)");
+             
+             
+    };
+
+    return that;
+}
+
+    that.nullData = function() {
+        return null;
+    };    
+
+    that.setData = function(d) {
+        var data = d;
+    };
+
+    that.getData = function() {
+        return data;
+    };
+
+

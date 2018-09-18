@@ -116,7 +116,7 @@ describe('Test D3.js with jasmine ', function() {
 
 
 
-//Testing Stacked Bar Chart
+//Testing Stacked Bar Charts (both Pie Charts have same heights)
 describe('Test D3.js with jasmine ', function() {
   var c;
 
@@ -141,7 +141,8 @@ describe('Test D3.js with jasmine ', function() {
     it('should have the correct width', function() {
       expect(getSvg().attr('width')).toBe("");
     });
-    
+  
+ 
   });
 
   function getSvg() {
@@ -150,6 +151,7 @@ describe('Test D3.js with jasmine ', function() {
 
 });
 
+   
 
 
     
@@ -187,7 +189,43 @@ describe('Test D3.js with jasmine ', function() {
   }
 
 });
+
+ //Testing Bar Chart - data
+    describe('Test D3.js with jasmine ', function() {
+  var c;
+
+  beforeEach(function() {
+    c = barChart();
+    c.render();
+  });
+
+  afterEach(function() {
+    d3.selectAll('svg').remove();
+  });
+
+  describe('working with data' ,function() {
+    it('should be null if no data has been specified', function() {
+      var nullData =  null//[{ date: '2014-01', value: 100}, {date: '2014-02', value: 215}];
+      expect(nullData).toBe(null);
+    });
+
     
+    it('should be able to update the data', function() {
+        var testData =  [{ date: '2014-01', value: 100}, {date: '2014-02', value: 215}];
+        var setData = testData;
+        expect(setData).toBe(testData);
+    });
+    
+  });
+  
+  function getSvg() {
+    return d3.select('svg');
+  }
+
+});
+
+
+ 
     
     
   
