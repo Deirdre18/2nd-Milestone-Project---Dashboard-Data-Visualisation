@@ -1,56 +1,53 @@
-.dropdown-item { box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1; }
+.dropdown-item {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
-.navbar a:hover  {
+.navbar a:hover {
     background-color: lightblue;
 }
 
 .navbar {
-      
-      background-color:purple;
-      margin-bottom: 0;
-      margin-top: 0;
-      width: 100%;
-      border: 0;
-      height: 100%;
-      bottom: 0px;
-      left: 0px;
-      right: 0px; 
-      padding-bottom:7px;
+    background-color: purple;
+    border: 0;
+    bottom: 0px;
+    height: 100%;
+    left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 7px;
+    right: 0px;
+    width: 100%;
 }
 
 body {
-     overflow-x: hidden; 
- }
-      
+    overflow-x: hidden;
+}
 
 footer {
-      
-      background-color:purple;
-      margin-bottom: 0;
-      margin-top: 0;
-      width: 100%;
-      border: 0;
-      height: 100%;
-      bottom: 0px;
-      left: 0px;
-      right: 0px; 
-      padding-bottom:1px;
-     }
- 
-.website {
-color: white;
-
+    background-color: purple;
+    border: 0;
+    bottom: 0px;
+    height: auto;
+    left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 1px;
+    right: 0px;
+    width: 100%;
 }
 
+.website {
+    color: white;
+}
 
 #navbarDropdown {
-color: white;
-
+    color: white;
 }
 
-#summary {display: block;
-          margin-left: auto;
+#summary {
+    display: block;
+    margin-left: auto;
 }
 
 .dropdown-menu a:hover {
@@ -58,25 +55,23 @@ color: white;
 }
 
 #home {
-color: white;
+    color: white;
 }
 
-
-h3 {text-align: center;
-	color: black;
+h3 {
+    color: black;
+    text-align: center;
 }
 
-.NB {text-align: center;
+.NB {
     margin-bottom: 15px;
+    text-align: center;
 }
 
+div {
+    clear: left;
+}
 
- div {
- clear: left;
- }
- body {
- background-color: #ccccff;
- }
-
-
-
+body {
+    background-color: #ccccff;
+}

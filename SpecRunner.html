@@ -1,40 +1,39 @@
 <html>
 
-<head>
-    <title>Jasmine Testing</title>
+    <head>
+        <title>Jasmine Testing</title>
 
-    <!-- Load Jasmine Framework 
+        <!-- Load Jasmine Framework 
     Make sure these are in order - first jasmine.js, jasmine-html.js (run jasmine tests in browser), boot(runs any test as soon as it's in browser), runs any test that's in the browser.-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine-html.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/boot.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine-html.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/boot.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine.css">
 
-   
-</head>
+
+    </head>
 
     <!-- no body, as there are no elements, just testing js code and it's still considered to be valid html code if leaving out body element.-->.
 
 
-<body>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>	
-    <script src="static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="static/js/d3.min.js"></script>
-    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
-    <script type="text/javascript" src="static/js/dc.min.js"></script>
-  
-     <!-- Load scripts, firstly spec/Charts.js and then scripts/Charts.js.-->
-    <script type="text/javascript" src="scripts/Charts.js"></script>
+    <body>
 
-    <!-- Load Tests -->
-    <script type="text/javascript" src="spec/ChartsSpec.js"></script>
-    
-	
-   
 
-</body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="static/js/d3.min.js"></script>
+        <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
+        <script type="text/javascript" src="static/js/dc.min.js"></script>
+
+        <!-- Load scripts, firstly spec/Charts.js and then scripts/Charts.js.-->
+        <script type="text/javascript" src="scripts/Charts.js"></script>
+
+        <!-- Load Tests -->
+        <script type="text/javascript" src="spec/ChartsSpec.js"></script>
+
+
+
+
+    </body>
 
 </html>
